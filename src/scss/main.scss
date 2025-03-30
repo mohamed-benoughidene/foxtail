@@ -1,0 +1,42 @@
+$dark-color: #1E1E1E;
+$light-color: #f1f1f1;
+$mute-color: #D9D9D9;
+$font1:"Pacifico", cursive;
+$font2:"Roboto", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+    font-family: $font2;
+}
+
+p,a{
+    font-family: $font2 !important;
+}
+a{
+    color: $dark-color;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: $font2;
+}
+
+.light-text{
+    color: $light-color;
+}
+.dark-text{
+    color: $dark-color;
+}
+
+@import './nav';
+@import './theme-switch';
+@import './page404';
+@import './home';
+@import './footer';
+@import './name-holder';

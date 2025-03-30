@@ -1,0 +1,203 @@
+.home{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    &__main{
+        height: calc(100vh - 100px);
+        max-height: 600px;
+        width: 100%;
+        padding: 0 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      gap: 1em;
+      h1{
+        text-align: center;
+      }
+    }
+    &__form{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+    }
+    .select-container{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5em;
+      flex-wrap: wrap;
+  }
+    &__results{
+      width: 100%;
+      height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        margin-top: 0;
+        padding: 0 4em;
+        ul{
+          display: flex;
+          gap: 1em;
+          flex-wrap: wrap;
+          justify-content: center;
+          li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            gap: 1em;
+            padding: 1em 2em;
+            border-radius: 4px;
+            background-color: #fff;
+            border: 1px solid $dark-color;
+            height: 5em;
+            flex: 1 1 calc(33.333% - 1em);
+            
+          }
+        }
+    }
+
+    .steps{
+      width: 100%;
+      height: fit-content;
+      h1{
+        font-size: 3rem;
+        margin-top: 2em;
+       margin-bottom: 1em;
+       text-align: center;
+      }
+      .cards{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1em;
+        flex-wrap: wrap;
+       
+background:$dark-color;
+
+        padding: 8em 4em;
+        .card1, .card2, .card3{
+          flex-grow: 1;
+          flex-basis: 0;
+          flex-shrink: 1;
+          h2{
+            font-size: 2rem;
+            margin-bottom: 1em;
+            text-transform: capitalize;
+            color: $light-color;
+          }
+          p{
+            font-size: 1.5rem;
+            color: $light-color;
+          }
+        }
+      }
+ 
+    }
+.faq{
+ margin: 4em 0;
+  padding: 0 4em;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1{
+    margin: 1em;
+    font-size: 3rem;
+  }
+  p{
+    font-size: 1.1rem;
+    line-height: 2em;
+  }
+  span{
+    font-size: 1.2rem;
+  }
+  .faq-collapse {
+    width: 60% !important;
+}
+}
+
+.features{
+  padding: 0 4em;
+  margin: 4em 0;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  h1{
+    text-align: center;
+    font-size: 3rem;
+  }
+  ul{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    li{
+      display: flex;
+    flex-direction: column;
+    gap: 1em;
+    }
+    p{
+      text-align: justify;
+    }
+  }
+}
+}
+@media (max-width: 768px) {
+    .home{
+       &__main{
+           padding: 0 1em;
+       }
+       .cards{
+        flex-direction: column;
+       }
+       .faq{
+         padding: 0 1em;
+         h1{
+           margin: 1em 0;
+           font-size: 2rem;
+         }
+         .faq-collapse {
+          width: 100% !important;
+      }
+       }
+       .steps{
+        h1{
+          font-size: 2rem;
+          padding: 0 1em;
+        }
+        .cards{
+          padding: 4em 1em;
+        }
+   
+      }
+
+      .features{
+        padding: 0 1em;
+        ul{
+          width: 80%;
+        }
+        h1{
+          text-align: center;
+          font-size: 2rem;
+        }
+        
+      }
+    }
+    
+  
+
+}
